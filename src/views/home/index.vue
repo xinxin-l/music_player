@@ -99,6 +99,9 @@ export default {
       qr.qrGetkey();
       api.mvGet().then(res=>{
         console.log("mv:",res)
+      }),
+      api.listGet().then(res=>{
+        console.log("list:",res)
       })
     });
     return { ...toRefs(Captcha), ...toRefs(qr) };

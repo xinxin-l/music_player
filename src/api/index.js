@@ -49,6 +49,9 @@ import {
       return get('/api/mv/all',{
         area:'全部'
       })
+    },
+    listGet(){
+      return get('/api/personalized')
     }
   }
   export default api
